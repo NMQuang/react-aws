@@ -1,0 +1,32 @@
+.t-quotation-printing {
+  color: $color-gray;
+  font-weight: bold;
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  &__input-form {
+    width: 430px;
+
+    &--small {
+      width: 282px;
+      margin-right: 90px;
+    }
+  }
+
+  &__input {
+    width: 165px;
+  }
+
+  &__button {
+    margin-left: 190px;
+    width: 142px;
+
+    &--small {
+      width: 142px;
+      margin-left: 83px;
+    }
+  }
+}

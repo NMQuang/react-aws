@@ -1,0 +1,30 @@
+.t-sign-in {
+  color: $color-gray;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  &__text {
+    text-align: center;
+    width: 400px;
+
+    a {
+      text-decoration: none;
+      color: $color-royal-blue;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 2rem;
+  }
+
+  .o-footer {
+    font-family: auto;
+    min-width: unset;
+    position: absolute;
+    top: 95vh;
+  }
+}

@@ -1,0 +1,36 @@
+.o-header {
+  $root: &;
+
+  display: flex;
+  height: 55px;
+
+  &__page-header {
+    min-width: 700px;
+    flex: 0 0 64.5%;
+  }
+
+  &__information {
+    min-width: 300px;
+    flex: 0 0 25.5%;
+    margin-left: 5px;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 33px;
+  }
+
+  &__icon-notification {
+    margin-bottom: 6px;
+    cursor: pointer;
+    @include u-hover;
+  }
+
+  &__icon-setting {
+    margin-left: 22px;
+    cursor: pointer;
+    @include u-hover;
+  }
+}

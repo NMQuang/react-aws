@@ -1,0 +1,32 @@
+.o-table-container {
+  $root: &;
+
+  max-width: 1325px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    width: 50%;
+  }
+
+  &__button-container {
+  }
+
+  &__button {
+    width: 202px;
+  }
+
+  &--two-button {
+    #{$root}__button-container {
+      display: flex;
+    }
+
+    #{$root}__button {
+      width: 172px;
+      margin-left: 35px;
+    }
+  }
+}

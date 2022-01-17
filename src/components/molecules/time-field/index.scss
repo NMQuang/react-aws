@@ -1,0 +1,20 @@
+.m-time-field {
+  display: flex;
+  width: 100%;
+
+  &--error {
+    .a-label {
+      border: 1px solid $color-red;
+      border-right: 0;
+    }
+
+    .a-input-time {
+      border: 1px solid $color-red;
+      border-left: 0;
+    }
+  }
+
+  .react-datepicker__triangle {
+    transform: translateX(25px) !important;
+  }
+}

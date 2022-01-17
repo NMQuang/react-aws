@@ -1,0 +1,150 @@
+.m-table {
+  $root: &;
+
+  display: flex;
+  color: $color-gray;
+  font-size: 15px;
+  letter-spacing: 4px;
+
+  &__table-left,
+  &__table-center,
+  &__table-right {
+    border-collapse: collapse;
+    border: 1px solid $color-gray;
+    border-top: 3px solid $color-gray;
+    border-bottom: 3px solid $color-gray;
+
+    tr {
+      th,
+      td {
+        border-top: 1px solid $color-gray;
+        padding: 0.5em 1em;
+        height: 41px;
+
+        #{$root}--scrollable & {
+          padding: 0;
+        }
+
+        &:not(:last-child) {
+          border-right: 1px solid $color-gray;
+        }
+
+        &:not(:first-child) {
+          border-left: 1px solid $color-gray;
+        }
+      }
+    }
+  }
+
+  &__table-center {
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+
+    .a-input-select--none-border__control {
+      width: 100px !important;
+      height: 41px !important;
+    }
+
+    tr {
+      th,
+      td {
+        min-width: 100px;
+        padding: 0 !important;
+
+        &:first-child {
+          border-left: 0;
+        }
+        &:last-child {
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  &__center-region {
+    min-width: 500px;
+  }
+
+  &__table-left {
+    border-left: 3px solid $color-gray;
+
+    .a-input-select--none-border__control {
+      width: 150px !important;
+      height: 41px !important;
+    }
+    tr {
+      th {
+        min-width: 150px;
+      }
+      td {
+        text-align: left;
+        min-width: 150px;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  &__table-right {
+    border-right: 3px solid $color-gray;
+    text-align: center;
+
+    .a-input-select--none-border__control {
+      width: 100px !important;
+      height: 41px !important;
+    }
+    tr {
+      th,
+      td {
+        min-width: 100px;
+        padding: 0 !important;
+      }
+    }
+  }
+
+  &__boder {
+    border: 3px solid $color-gray;
+  }
+
+  &__title {
+    border-bottom: 3px solid $color-gray;
+  }
+
+  &__table-center-title {
+    border-top: 3px solid $color-gray;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  &__table-center-container {
+    overflow-x: scroll;
+  }
+
+  &__cell {
+    border: 1px solid $color-gray;
+    color: $color-gray;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding: 0.5em 1em;
+    text-align: center;
+
+    &__control {
+      height: 40px !important;
+    }
+  }
+
+  &__cell--gray {
+    background-color: $color-gray;
+  }
+
+  .a-input__input {
+    background-color: $color-white;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    padding: 12px 20px;
+  }
+}

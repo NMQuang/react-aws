@@ -1,0 +1,30 @@
+.a-checkbox {
+  $root: &;
+
+  align-items: center;
+  color: $color-gray;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 13px;
+  font-weight: bold;
+  @include u-hover;
+
+  .a-icon {
+    background-repeat: no-repeat;
+    height: 23px;
+    margin-left: 10px;
+    width: 23px;
+
+    #{$root}--large-size & {
+      margin-left: 14px;
+    }
+  }
+
+  &--large-size {
+    font-size: 24px;
+  }
+
+  &__checkbox-input {
+    display: none;
+  }
+}

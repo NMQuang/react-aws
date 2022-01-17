@@ -1,0 +1,20 @@
+.m-date-field {
+  display: flex;
+  width: 100%;
+
+  &--error {
+    .a-label {
+      border: 1px solid $color-red;
+      border-right: 0;
+    }
+
+    .a-input-date__input {
+      border: 1px solid $color-red;
+      border-left: 0;
+    }
+  }
+
+  .a-input-date {
+    width: 100%;
+  }
+}

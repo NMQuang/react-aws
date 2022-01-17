@@ -1,0 +1,29 @@
+.t-branch-master-popup {
+  .a-label__label-name {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .a-input__input {
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    &--item {
+      width: calc(50% - 50px);
+    }
+  }
+
+  .m-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+  }
+
+  .a-button--green {
+    letter-spacing: 5px;
+  }
+}

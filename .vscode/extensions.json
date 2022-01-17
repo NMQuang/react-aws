@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "formulahendry.auto-close-tag",
+    "steoates.autoimport",
+    "stylelint.vscode-stylelint",
+    "vscode-icons-team.vscode-icons",
+    "wix.vscode-import-cost"
+  ]
+}

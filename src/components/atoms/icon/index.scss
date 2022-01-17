@@ -1,0 +1,39 @@
+.a-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+
+  @mixin icon-shape($name) {
+    &--#{$name} {
+      background-image: url('~src/assets/icons/#{$name}.svg');
+    }
+  }
+
+  @mixin icon-size($name, $size) {
+    &--#{$name} {
+      width: $size;
+      height: $size;
+    }
+  }
+
+  @mixin icon($name, $size) {
+    @include icon-shape($name);
+    @include icon-size($name, $size);
+  }
+
+  @include icon-shape('bell');
+  @include icon-shape('bullet');
+  @include icon-shape('cancel');
+  @include icon-shape('checkbox-checked');
+  @include icon-shape('checkbox');
+  @include icon-shape('dropdown');
+  @include icon-shape('location');
+  @include icon-shape('notification-bell');
+  @include icon-shape('search');
+  @include icon-shape('setting');
+}

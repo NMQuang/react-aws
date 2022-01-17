@@ -1,0 +1,35 @@
+.o-popup {
+  .a-label__label-name {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .a-input__input {
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    &-item {
+      width: 45%;
+    }
+  }
+
+  .checkbox {
+    margin-top: 10px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+  }
+
+  .a-button--green {
+    letter-spacing: 5px;
+    width: 250px;
+    margin: 0 50px;
+  }
+}

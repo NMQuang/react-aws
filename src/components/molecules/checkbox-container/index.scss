@@ -1,0 +1,32 @@
+.m-checkbox-container {
+  $root: &;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+
+  &__item {
+    margin-right: 12px;
+  }
+
+  &--second-container {
+    background-color: $color-light-dew;
+    border-radius: 3px;
+    border: 1px solid $color-gray;
+    display: inline-flex;
+    height: 42px;
+    justify-content: flex-start;
+    width: 660px;
+    align-items: center;
+
+    #{$root}__item {
+      margin: 0 43px 0px 20px;
+    }
+  }
+}
+
+.a-checkbox {
+  display: flex;
+  line-height: 1px;
+}

@@ -1,0 +1,51 @@
+.t-order {
+  $root: &;
+
+  &__button-container {
+    margin: 20px 50px;
+  }
+
+  &__input-container {
+    margin-bottom: 30px;
+  }
+
+  .m-table {
+    margin-top: 20px;
+  }
+
+  .error-message {
+    margin-top: 4px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 421px 421px 421px;
+    column-gap: 30px;
+    row-gap: 20px;
+
+    .item6 {
+      grid-column: 1 / 4;
+    }
+
+    .item8 {
+      grid-column: 2 / 4;
+    }
+
+    .item14 {
+      display: inline-flex;
+      justify-content: space-between;
+
+      &__button {
+        margin-left: 5px;
+      }
+    }
+
+    .item15 {
+      grid-column: 1 / 4;
+    }
+  }
+
+  .m-checkbox-container {
+    height: 50px;
+  }
+}

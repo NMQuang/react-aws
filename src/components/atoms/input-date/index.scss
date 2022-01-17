@@ -1,0 +1,40 @@
+.a-input-date {
+  &__input {
+    background-color: $color-light-dew;
+    border: 1px $color-gray solid;
+    box-shadow: 10px 10px 20px 1px rgba($color-gray, 0.7);
+    color: $color-gray;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 41px;
+    padding: 12px 20px;
+    min-width: 155px;
+    width: 100%;
+    @include u-hover;
+  }
+
+  .react-datepicker-wrapper {
+    &::after {
+      content: '';
+      position: absolute;
+      border: 7px solid transparent;
+      border-top: 8px solid $color-gray;
+      right: 10px;
+      top: 16px;
+      pointer-events: none;
+    }
+
+    &:hover::after {
+      opacity: 0.5;
+    }
+  }
+
+  .react-datepicker-wrapper {
+    position: relative;
+  }
+
+  .react-datepicker__triangle {
+    transform: translate(50px, 0) !important;
+  }
+}
